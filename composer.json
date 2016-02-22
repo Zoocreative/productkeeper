@@ -1,5 +1,5 @@
 {
-    "name": "zoocreative/productkeeper",
+    "name": "Zoocreative/productkeeper",
     "autoload": {
         "psr-0" : {
             "mightyzoo\\productkeeper" : ""
