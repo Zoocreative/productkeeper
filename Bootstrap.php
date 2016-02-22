@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the Dektrium project.
- *
- * (c) Dektrium project <http://github.com/dektrium/>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace mightyzoo\productkeeper;
 
 use Yii;
@@ -38,15 +29,10 @@ class Bootstrap implements BootstrapInterface
         if ($app->hasModule('products') && ($module = $app->getModule('products')) instanceof Module) {
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
             foreach ($this->_modelMap as $name => $definition) {
-                $class = "dektrium\\user\\models\\" . $name;
+                $class = "mightyzoo\\productkeeper\\models\\" . $name;
                 Yii::$container->set($class, $definition);
                 $modelName = is_array($definition) ? $definition['class'] : $definition;
                 $module->modelMap[$name] = $modelName;
-                if (in_array($name, ['User', 'Profile', 'Token', 'Account'])) {
-                    Yii::$container->set($name . 'Query', function () use ($modelName) {
-                        return $modelName::find();
-                    });
-                }
             }
 
             $configUrlRule = [
