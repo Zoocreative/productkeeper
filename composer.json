@@ -1,0 +1,8 @@
+{
+    "name": "zoocreative/productkeeper",
+    "autoload": {
+        "psr-0" : {
+            "mightyzoo\\productkeeper" : ""
+        }
+    }
+}
