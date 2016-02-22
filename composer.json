@@ -4,7 +4,6 @@
     "keywords": ["products","shop"],
     "homepage": "https://github.com/zoocreative/productkeeper",
     "license": "GNU",
-    "type": "yii2-extension",
     "authors": [
         {
             "name": "Richard Walsh",
@@ -13,7 +12,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "~2.0",
     },
