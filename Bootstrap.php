@@ -9,10 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace mightyzoo\productkeeper;
 
 use Yii;
-use yii\authclient\Collection;
 use yii\base\BootstrapInterface;
 use yii\console\Application as ConsoleApplication;
 use yii\i18n\PhpMessageSource;
