@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers;
+namespace mightyzoo\productkeeper\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
@@ -13,7 +13,7 @@ use app\models\Tag;
 
 class DefaultController extends ZController
 {
-    public $layout = 'inner.haml';
+    public $layout = '/inner.haml';
     public $defaultAction = 'index';
 
     public function behaviors()
@@ -63,7 +63,8 @@ class DefaultController extends ZController
         //     'pageTitle' => $pageTitle,
         //     'searchModel' => $searchModel
         // ]);
-        return "it's Working so it is";
+
+        return $this->render('index.haml');
     }
 
     /////////////////////////////////////////////////////////////////
@@ -76,6 +77,7 @@ class DefaultController extends ZController
 
     public function actionUpdate($id)
     {
+        return "Update Me";
     }
 
     public function actionStore($id)
