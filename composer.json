@@ -1,8 +1,23 @@
 {
-    "name": "Zoocreative/productkeeper",
+    "name": "zoocreative/productkeeper",
+    "description": "Product Management for Zoo Keeper",
+    "keywords": ["products","shop"],
+    "homepage": "https://github.com/zoocreative/productkeeper",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Richard Walsh",
+            "email": "richard@themightyzoo.com",
+            "homepage": "http://themightyzoo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
     "autoload": {
-        "psr-0" : {
-            "mightyzoo\\productkeeper" : ""
+        "psr-0": {
+            "mightyzoo\\productkeeper": ""
         }
     }
 }
